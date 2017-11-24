@@ -2,7 +2,7 @@
   "name": "cuttlesoft-syntax",
   "theme": "syntax",
   "main": "./lib/cuttlesoft",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Cuttlesoft colors syntax theme",
   "keywords": [
     "syntax",
