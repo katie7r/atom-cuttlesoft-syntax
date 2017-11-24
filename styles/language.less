@@ -1,0 +1,259 @@
+.syntax--comment {
+  .if (@style, 'dark', color, @color-03);
+  .if (@style, 'light', color, @color-04);
+}
+
+.syntax--constant {
+  color: @color-09;
+
+  &.syntax--character {
+    &.syntax--escape {
+      color: @color-0C;
+    }
+  }
+
+  &.syntax--numeric {
+    color: @color-09;
+  }
+
+  &.syntax--other {
+    &.syntax--color {
+      color: @color-0C;
+    }
+
+    &.syntax--symbol {
+      color: @color-0B;
+    }
+  }
+}
+
+.syntax--entity {
+  &.syntax--name {
+    &.syntax--class {
+      .if (@style, 'dark', color, @color-0A);
+      .if (@style, 'light', color, @color-09);
+    }
+
+    &.syntax--function {
+      color: @color-0D;
+    }
+
+    &.syntax--section {
+      color: @color-0D;
+    }
+
+    &.syntax--tag {
+      color: @color-08;
+    }
+
+    &.syntax--type {
+      &.syntax--class {
+        .if (@style, 'dark', color, @color-0A);
+        .if (@style, 'light', color, @color-09);
+      }
+    }
+  }
+
+  &.syntax--other {
+    &.syntax--attribute-name {
+      color: @color-09;
+
+      &.syntax--id {
+        color: @color-0D;
+      }
+    }
+
+    &.syntax--inherited-class {
+      color: @color-0B;
+    }
+  }
+}
+
+.syntax--invalid.syntax--illegal {
+  .if (@style, 'dark', color, @color-00);
+  .if (@style, 'light', color, @color-07);
+  background-color: @color-08;
+}
+
+.syntax--keyword {
+  color: @color-0E;
+
+  &.syntax--arithmetic {
+    .if (@style, 'dark', color, @color-05);
+    .if (@style, 'light', color, @color-02);
+  }
+
+  &.syntax--other {
+    &.syntax--special-method {
+      color: @color-0D;
+    }
+
+    &.syntax--unit {
+      color: @color-09;
+    }
+  }
+}
+
+.syntax--markup {
+  &.syntax--bold {
+    font-weight: bold;
+    .if (@style, 'dark', color, @color-0A);
+    .if (@style, 'light', color, @color-09);
+  }
+
+  &.syntax--changed {
+    color: @color-0E;
+  }
+
+  &.syntax--deleted {
+    color: @color-08;
+  }
+
+  &.syntax--heading {
+    color: @color-0D;
+  }
+
+  &.syntax--inserted {
+    color: @color-0B;
+  }
+
+  &.syntax--italic {
+    font-style: italic;
+    color: @color-0E;
+  }
+
+  &.syntax--list {
+    color: @color-08;
+  }
+
+  &.syntax--quote {
+    color: @color-09;
+  }
+
+  &.syntax--raw {
+    &.syntax--inline {
+      color: @color-0B;
+    }
+  }
+}
+
+.syntax--meta {
+  &.syntax--class {
+    .if (@style, 'dark', color, @color-07);
+    .if (@style, 'light', color, @color-01);
+  }
+
+  &.syntax--link {
+    color: @color-09;
+  }
+
+  &.syntax--require {
+    color: @color-0D;
+  }
+
+  &.syntax--selector {
+    color: @color-0E;
+  }
+
+  &.syntax--separator {
+    .if (@style, 'dark', color, @color-05);
+    .if (@style, 'light', color, @color-02);
+    .if (@style, 'dark', background-color, @color-02);
+    .if (@style, 'light', background-color, @color-06);
+  }
+}
+
+.syntax--none {
+  .if (@style, 'dark', color, @color-05);
+  .if (@style, 'light', color, @color-02);
+}
+
+.syntax--punctuation {
+  &.syntax--definition {
+    &.syntax--array,
+    &.syntax--parameters,
+    &.syntax--string,
+    &.syntax--variable {
+      .if (@style, 'dark', color, @color-05);
+      .if (@style, 'light', color, @color-02);
+    }
+
+    &.syntax--bold {
+      font-weight: bold;
+      .if (@style, 'dark', color, @color-0A);
+      .if (@style, 'light', color, @color-09);
+    }
+
+    &.syntax--comment {
+      .if (@style, 'dark', color, @color-03);
+      .if (@style, 'light', color, @color-04);
+    }
+
+    &.syntax--entity {
+      color: @color-0D;
+    }
+
+    &.syntax--italic {
+      font-style: italic;
+      color: @color-0E;
+    }
+  }
+
+  &.syntax--section {
+    &.syntax--embedded {
+      color: @color-0F;
+    }
+  }
+}
+
+.syntax--storage {
+  color: @color-0E;
+}
+
+.syntax--string {
+  color: @color-0B;
+
+  &.syntax--other {
+    &.syntax--link {
+      color: @color-08;
+    }
+  }
+
+  &.syntax--regexp {
+    color: @color-0C;
+  }
+}
+
+.syntax--support {
+  &.syntax--class {
+    .if (@style, 'dark', color, @color-0A);
+    .if (@style, 'light', color, @color-09);
+  }
+
+  &.syntax--type {
+    color: @color-0C;
+  }
+
+  &.syntax--function {
+    color: @color-0C;
+
+    &.syntax--any-method {
+      color: @color-0D;
+    }
+  }
+}
+
+.syntax--variable {
+  color: @color-08;
+
+  &.syntax--interpolation {
+    color: @color-0F;
+  }
+
+  &.syntax--parameter {
+    &.syntax--function {
+      .if (@style, 'dark', color, @color-05);
+      .if (@style, 'light', color, @color-02);
+    }
+  }
+}

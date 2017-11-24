@@ -1,0 +1,27 @@
+// Cuttlesoft brand colors
+@cuttle-blue: #18C0DD;
+@mod-blue:    #4156A6;
+@magenta:     #DD1175;
+@crimson:     #E6222D;
+@buttercup:   #F5BA17;
+@turbo:       #F2E900;
+@light-grey:  #EEEEEE;
+@medium-grey: #AAAAAA;
+@dark-grey:   #444444;
+
+@color-00_: @dark-grey;                 // Default background
+@color-01_: lighten(@color-00, 3%);     // Lighter background (status bars)
+@color-02_: fade(@medium-grey, 15%);    // Selection background
+@color-03_: @medium-grey; // Comments, invisibles, highlighting
+@color-04_: darken(@color-02, 3%);      // Dark foreground (status bars)
+@color-05_: darken(@light-grey, 10%);   // Default foreground, caret, delimiters, operators
+@color-06_: lighten(@medium-grey, 10%); // Light foreground (infrequent)
+@color-07_: @light-grey;   // Light background (infrequent)
+@color-08_: @cuttle-blue; // Variables, XML tags, Markup link text, Markup lists, Diff deleted
+@color-09_: @crimson;     // Integers, boolean, constants, XML attributes, Markup link URL
+@color-0A_: @turbo;       // Classes, Markup bold, search text background
+@color-0B_: @magenta;     // Strings, inherited class, Markup code, Diff inserted
+@color-0C_: @mod-blue;    // Support, regular expressions, escape characters, Markup quotes
+@color-0D_: @buttercup;   // Functions, methods, attribute IDs, headings
+@color-0E_: @magenta;     // Keywords, storage, selector, Markup italic, Diff changed
+@color-0F_: @medium-grey; // Deprecated, opening/closing embedded language tags
